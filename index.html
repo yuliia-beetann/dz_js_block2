@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Второй блок задач</title>
+</head>
+<body>
+    <div class="task1">
+        <p class="info">1. Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18-60) или пенсионером (60–...).</p>
+        <input type="number">
+        <button>Oпределить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task2">
+        <p class="info">2. Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).</p>
+        <input type="number">
+        <button>Вывести</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task3">
+        <p class="info">3. Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.</p>
+        <input type="number">
+        <button>Определить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task4">
+        <p class="info">4. Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.</p>
+        <input type="number">
+        <button>Определить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task5">
+        <p class="info">5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.</p>
+        <input type="number">
+        <button>Определить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task6">
+        <p class="info">6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.</p>
+        <input type="number">
+        <input type="radio" name="currency" id="eur">
+        <label for="eur">EUR</label>
+        <input type="radio" name="currency" id="uan">
+        <label for="uan">UAN</label>
+        <input type="radio" name="currency" id="azn">
+        <label for="azn">AZN</label>
+        <button>Конвертировать</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task7">
+        <p class="info">7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.</p>
+        <input type="number">
+        <button>Определить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task8">
+        <p class="info">8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.</p>
+        <label for="length">Введите длинну окружности: </label>
+        <input type="number" id="length" class="length">
+        <label for="perimetr"> Введите периметр квадрата: </label>
+        <input type="number" id="perimetr" class="perimetr">
+        <button>Определить</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task9">
+        <p class="info">9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.</p>
+        <ol>
+            <li>
+                <p>Сколько будет 2 + 2 ? </p>
+                <input type="radio" name="q1" id="q1r1">
+                <label for="q1r1">3</label>
+                <input type="radio" name="q1" id="q1r2">
+                <label for="q1r2">4</label>
+                <input type="radio" name="q1" id="q1r3">
+                <label for="q1r3">5</label>
+            </li>
+            <li>
+                <p>За роль в каком фильме Леонардо Ди Каприо получил Оскар? </p>
+                <input type="radio" name="q2" id="q2r1">
+                <label for="q2r1">Выживший</label>
+                <input type="radio" name="q2" id="q2r2">
+                <label for="q2r2">Титаник</label>
+                <input type="radio" name="q2" id="q2r3">
+                <label for="q2r3">Великий Гетсби</label>
+            </li>
+            <li>
+                <p>Какое написание известной песни группы Queen является правильным? </p>
+                <input type="radio" name="q3" id="q3r1">
+                <label for="q3r1">Bohemian Rapsody</label>
+                <input type="radio" name="q3" id="q3r2">
+                <label for="q3r2">Bohemian Raphsodia</label>
+                <input type="radio" name="q3" id="q3r3">
+                <label for="q3r3">Bohemian Raphsody</label>
+            </li>
+        </ol>
+        <button>Подсчитать сумму баллов</button>
+        <h4 class="result"></h4>
+    </div>
+
+    <div class="task10">
+        <p class="info">10. Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.</p>
+        <label for="year">Введите год: </label>
+        <input type="number" id="year" class="year">
+        <label for="month"> Введите месяц: </label>
+        <input type="number" id="month" class="month">
+        <label for="day"> Введите день: </label>
+        <input type="number" id="day" class="day">
+        <button>Определить следующую дату</button>
+        <h4 class="result"></h4>
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
